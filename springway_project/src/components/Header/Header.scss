@@ -1,0 +1,119 @@
+.header{
+    background: linear-gradient(90deg, #1E50CF 0%, #391E1E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+    .user-info{
+      color: white;
+      position: absolute;
+      left: 70px;
+      top: 10px;
+      
+    }
+    .logo{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .ham{
+        position: absolute;
+        left: 20px;
+        top: 28px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    ul {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        background-color: rgb(246, 216, 216);
+        top: 0;
+        left: -100%;
+        justify-content: center;
+        gap: 40px;
+        transition: left 0.5s ease-in-out;
+        z-index: 9999;
+
+        .userDetails{
+          display: flex;
+          gap: 10px;
+          position: absolute;
+          bottom: 20px;
+         
+          .login-details{
+            h5{
+              list-style-type: none;
+              color: rgb(102, 100, 100) !important;
+              font-size: 16px;
+              font-weight: 700;
+            }
+            #log{
+              color: red !important;
+            }
+          }
+        }
+      
+        a {
+          text-decoration: none;
+      
+          li {
+            list-style-type: none;
+            color: black !important;
+            font-size: 18px;
+            font-weight: 700;
+      
+            &:hover {
+              transform: scale(1.1);
+              transition: ease-in-out 0.5s;
+            }
+          }
+        }
+      
+        .IoMdClose {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+
+     
+      }
+      
+      ul.show {
+        left: 0;
+        transition: ease-in-out 0.5s;
+      }
+      #logout{
+        position: absolute;
+        right: 20px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        h5{
+          font-size: 15px;
+          margin-bottom: unset;
+
+        }
+      }
+      
+    // .checkbox
+}
+@media(max-width:520px){
+  .header{
+    .logo{
+      margin-left: 40px;
+    }
+    .user-info{
+      top:25px;
+      left: 55px;
+
+      h5{
+        font-size: 12px;
+      }
+    }
+  }
+}

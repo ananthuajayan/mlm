@@ -1,0 +1,17 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 89vh;
+    form{
+        width: 700px;
+    }
+}
+@media(max-width:735px){
+    #about{
+        display: flex;
+        flex-direction: column;
+        form{
+            width: unset;
+        }
+    }   
+}
